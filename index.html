@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML+CSS Geekbrains</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/d90dbae002.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -27,7 +28,7 @@
                     <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnus porro ex, magni, explicabo veniam, incidunt in quam sapiente ut ipsum.</p>
                     <p class="about__text">Pariatue iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde per-ferendis nemo debitis dolor.</p>
                 </div>
-                <img src="#" alt="About image" height="245" class="about__image">
+                <video src="https://storage.coverr.co/videos/5i5r02eldkZDwDne00b9udh15JxN24Rnj02?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjA3MDcyODg4fQ.JmiktWb9abVBXa5mnBb5bloFQ9Qb5FakRG14Z4F6sY8" alt="About image" height="245" class="about__image" controls autoplay muted loop>
             </section>
             <section class="page__section dignity">
                 <h2 class="page__section-title page__section-title-wide">Dignity and pluses product</h2>
@@ -108,7 +109,7 @@
                 <h2 class="page__section-title page__section-title-wide">Buy it now</h2>
                 <div class="buy-it__offer">
                     <h3 class="buy-it__offer-title">Standart</h3>
-                    <p class="buy-it__offer-price">$100</p>
+                    <span class="buy-it__offer-price">$100</span>
                     <ol class="buy-it__offer-list">
                         <li>Porro officia cumque sint deleniti;</li>
                         <li>Тemo facere rem vitae odit;</li>
@@ -119,7 +120,7 @@
                 </div>
                 <div class="buy-it__offer">
                     <h3 class="buy-it__offer-title">Premium</h3>
-                    <p class="buy-it__offer-price">$150</p>
+                    <span class="buy-it__offer-price">$150</span>
                     <ol class="buy-it__offer-list">
                         <li>Porro officia cumque sint deleniti;</li>
                         <li>Тemo facere rem vitae odit;</li>
@@ -134,7 +135,7 @@
                 </div>
                 <div class="buy-it__offer">
                     <h3 class="buy-it__offer-title">Lux</h3>
-                    <p class="buy-it__offer-price">$200</p>
+                    <span class="buy-it__offer-price">$200</span>
                     <ol class="buy-it__offer-list">
                         <li>Porro officia cumque sint deleniti;</li>
                         <li>Тemo facere rem vitae odit;</li>
@@ -153,7 +154,31 @@
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer class="page-footer">
+            <h2 class="page-footer__header">Contacts</h2>
+            <form action="#" class="page-footer__form">
+                <input type="text" class="form__input" id="form__name" placeholder="Your name" required>
+                <input type="email" class="form__input" id="form__mail" placeholder="Your email" required pattern="\S+@\S+\.\S+">
+                <textarea class="form__input" id="form__message" cols="30" rows="10" placeholder="Your message" required></textarea>
+                <input class="form__input" type="submit" value="Send" id="form__send">
+            </form>
+            <div class="page-footer__contacts">
+                <ul class="page-footer__contacts-list">
+                    <li class="page-footer__contacts-list-item"><i class="fab fa-skype"></i> here_your_login_skype</li>
+                    <li class="page-footer__contacts-list-item">279679659</li>
+                    <li class="page-footer__contacts-list-item"><i class="fas fa-at"></i> psdhtmlcss@mail.ru</li>
+                    <li class="page-footer__contacts-list-item"><i class="fas fa-phone"></i> 80 00 4568 55 55</li>
+                </ul>
+                <div class="page-footer__social-media">
+                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </footer>
+        <p class="attribution">Copyright © 2014 Product name · PSD HTML CSS</p>
     </div>
 </body>
 </html>

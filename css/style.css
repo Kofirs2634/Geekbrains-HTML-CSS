@@ -164,14 +164,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 0 0 0 32px
+    margin: 0 0 24px 32px;
 }
 .reviews__review-photo {
     min-width: 75px;
     height: 75px;
     border-radius: 50%;
     background: #445161;
-    margin: 0 0 0 0
+    margin: 0
 }
 .reviews__review-text {
     background-color: #EBEBEB;
@@ -179,7 +179,7 @@ body {
     width: 455px;
     box-sizing: border-box;
     position: relative;
-    margin: 0 0 24px 0;
+    margin: 0;
     border-radius: 5px;
     font-size: 14px;
     line-height: 18px;
@@ -217,26 +217,30 @@ body {
 }
 .buy-it__offer-title {
     text-align: center;
-    margin: 16px 0;
+    margin: 0;
+    padding: 16px;
+    box-sizing: border-box;
     font-size: 24px;
     line-height: 24px;
     font-weight: 400;
 }
 .buy-it__offer-price {
+    display: block;
     font-size: 40px;
     line-height: 30px;
     color: #445161;
     background-color: #FFF;
     text-align: center;
-    padding: 16px 0;
+    padding: 16px;
     box-sizing: border-box;
     margin: 0;
     width: 296px
 }
 .buy-it__offer-list {
     font-weight: 400;
-    padding: 0;
-    margin: 20px;
+    margin: 20px 0 0 0;
+    padding: 0 0 0 20px;
+    box-sizing: border-box;
     font-size: 14px;
     line-height: 24px;
     list-style-position: inside;
@@ -251,9 +255,149 @@ body {
     color: #445161;
     font-weight: 700;
     text-decoration: none;
-    padding: 8px 0;
+    padding: 12px;
     box-sizing: border-box;
     border-radius: 5px;
     line-height: 24px;
-    margin: 0 20px 20px 20px;
+    margin: 10px auto 20px auto;
+    transition: .2s;
+}
+.buy-it__offer-button:hover,
+.buy-it__offer-button:active {
+    background-color: #6A7E97;
+    color: #FFF
+}
+
+.page-footer {
+    background-color: #445161;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    box-sizing: border-box;
+}
+.page-footer__header {
+    width: 100%;
+    text-align: center;
+    margin: 0 0 30px 0;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 400;
+}
+.page-footer__form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 45px 0 0
+}
+.form__input {
+    margin: 0 0 22px 0;
+    border: none;
+    border-radius: 5px;
+    padding: 14px;
+    box-sizing: border-box;
+    font-size: 16px;
+    color: #445161;
+}
+.form__input:last-child {
+    margin: 0
+}
+.form__input::placeholder {
+    font-size: 16px;
+    color: #445161;
+    font-family: Arial;
+}
+#form__name {
+    text-transform: capitalize;
+}
+#form__message {
+    font-family: Arial;
+    resize: none;
+}
+#form__send {
+    width: 140px;
+    min-height: 40px;
+    background: #FFF;
+    margin: 0 auto;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: .2s;
+}
+#form__send:hover,
+#form__send:active {
+    background-color: #6A7E97;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.page-footer__contacts-list {
+    padding: 0;
+    margin: 0 0 32px 0
+}
+.page-footer__contacts-list-item {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 0 16px 0;
+    position: relative;
+}
+.page-footer__contacts-list-item:last-child {
+    margin: 0
+}
+.page-footer__contacts-list-item i {
+    font-size: 23px
+}
+.page-footer__contacts-list-item i:before {
+    vertical-align: middle;
+}
+/* Костыль из-за отсутствия на fontawesome иконки аськи */
+.page-footer__contacts-list-item:nth-child(2) {
+    padding: 0 0 0 26px;
+    box-sizing: border-box;
+}
+.page-footer__contacts-list-item:nth-child(2):before {
+    content: '';
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-image: url('../img/icq.svg');
+    background-size: contain;
+}
+.page-footer__social-media {
+    display: flex
+}
+.page-footer__social-media-link {
+    display: block;
+    width: 45px;
+    height: 45px;
+    background-color: #FFF;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    color: #445161;
+    font-size: 20px;
+    margin: 0 7px 0 0;
+    transition: .2s;
+}
+.page-footer__social-media-link:hover,
+.page-footer__social-media-link:active {
+    color: #FFF;
+    background-color: #6A7E97;
+}
+.page-footer__social-media-link:last-child {
+    margin: 0
+}
+
+.attribution {
+    background-color: #F5F5F5;
+    width: 100%;
+    color: #445161;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    box-sizing: border-box;
 }
