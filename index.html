@@ -3,182 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML+CSS Geekbrains</title>
+    <title>Geekbrains HTML+CSS Final</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/d90dbae002.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
         <header class="page-header">
-            <div class="page-header__wrapper">
-                <h1 class="page-header__title">Product name</h1>
-                <ul class="page-header__list">
-                    <li class="page-header__list-item">Put on this page information about your product</li>
-                    <li class="page-header__list-item">A detailed description of your product</li>
-                    <li class="page-header__list-item">Tell us about the advantages and merits</li>
-                    <li class="page-header__list-item">Associate the page with the payment system</li>
-                </ul>
+            <div class="page-header__navbar">
+                <a href="#" class="page-header__logo">
+                    <svg class="page-header__logo-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="56">
+                        <path d="M52.873,55.128 L58.125,45.939 L63.377,55.128 L52.873,55.128 ZM46.303,45.172 L56.811,45.172 L51.557,54.359 L46.303,45.172 ZM51.557,34.451 L56.811,43.641 L46.303,43.641 L51.557,34.451 ZM39.738,33.686 L50.243,33.686 L44.990,42.874 L39.738,33.686 ZM44.990,22.967 L50.243,32.154 L39.738,32.154 L44.990,22.967 ZM33.168,22.202 L43.676,22.202 L38.422,31.390 L33.168,22.202 ZM38.422,11.480 L43.676,20.671 L33.168,20.671 L38.422,11.480 ZM26.600,10.713 L37.108,10.713 L31.854,19.905 L26.600,10.713 ZM31.854,-0.006 L37.108,9.184 L26.600,9.184 L31.854,-0.006 ZM20.032,20.671 L25.286,11.480 L30.540,20.671 L20.032,20.671 ZM13.465,32.154 L18.718,22.967 L23.971,32.154 L13.465,32.154 ZM6.897,43.641 L12.151,34.451 L17.404,43.641 L6.897,43.641 ZM0.331,55.128 L5.582,45.939 L10.836,55.128 L0.331,55.128 ZM17.404,45.172 L12.151,54.359 L6.897,45.172 L17.404,45.172 ZM23.971,33.686 L18.718,42.874 L13.465,33.686 L23.971,33.686 ZM30.540,22.202 L25.286,31.390 L20.032,22.202 L30.540,22.202 ZM37.108,55.128 L26.600,55.128 L31.854,45.939 L37.108,55.128 ZM43.676,45.172 L38.422,54.359 L33.168,45.172 L43.676,45.172 ZM50.243,55.128 L39.738,55.128 L44.990,45.939 L50.243,55.128 Z">
+                    </svg>
+                    <span class="page-header__logo-name">Waxom</span>
+                </a>
+                <nav class="page-header__nav">
+                    <a href="#" class="page-header__nav-link">Home</a>
+                    <a href="#" class="page-header__nav-link">About Us</a>
+                    <a href="#" class="page-header__nav-link">Portfolio</a>
+                    <a href="#" class="page-header__nav-link">Features</a>
+                    <a href="#" class="page-header__nav-link">Blog</a>
+                    <a href="#" class="page-header__nav-link">Pricing</a>
+                    <a href="#" class="page-header__nav-link">Shortcodes</a>
+                    <a href="#" class="page-header__nav-link">Contact</a>
+                </nav>
+                <div class="page-header__links">
+                    <a href="#" class="page-header__link"><i class="fas fa-shopping-bag"></i></i></a>
+                    <a href="#" class="page-header__link"><i class="fas fa-search"></i></a>
+                </div>
             </div>
-            <img src="#" alt="Header image" height="214" class="page-header__image">
+            <section class="page-header__promo">
+                <h2 class="page-header__promo-subheader">Unique and Modern Design</h2>
+                <h1 class="page-header__promo-header">Portfolio PSD Template</h1>
+                <p class="page-header__promo-description">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.</p>
+                <a href="#" class="page-header__promo-button">Get Started</a>
+            </section>
+            <div class="page-header__slider-dots">
+                <input type="radio" name="slider-dots" class="page-header__slider-dot">
+                <input type="radio" name="slider-dots" class="page-header__slider-dot" checked>
+                <input type="radio" name="slider-dots" class="page-header__slider-dot">
+                <input type="radio" name="slider-dots" class="page-header__slider-dot">
+                <input type="radio" name="slider-dots" class="page-header__slider-dot">
+            </div>
+            <button class="page-header__slider-switch"></button>
+            <button class="page-header__slider-switch"></button>
         </header>
-        <main class="page">
-            <section class="page__section about">
-                <div class="page__section-about-wrapper">
-                    <h2 class="page__section-title">About your project</h2>
-                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnus porro ex, magni, explicabo veniam, incidunt in quam sapiente ut ipsum.</p>
-                    <p class="about__text">Pariatue iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde per-ferendis nemo debitis dolor.</p>
-                </div>
-                <video src="https://storage.coverr.co/videos/5i5r02eldkZDwDne00b9udh15JxN24Rnj02?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6Ijg3NjdFMzIzRjlGQzEzN0E4QTAyIiwiaWF0IjoxNjA3MDcyODg4fQ.JmiktWb9abVBXa5mnBb5bloFQ9Qb5FakRG14Z4F6sY8" alt="About image" height="245" class="about__image" controls autoplay muted loop>
-            </section>
-            <section class="page__section dignity">
-                <h2 class="page__section-title page__section-title-wide">Dignity and pluses product</h2>
-                <ul class="dignity__list">
-                    <li class="dignity__list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-                    <li class="dignity__list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-                    <li class="dignity__list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-                </ul>
-                <ul class="dignity__list">
-                    <li class="dignity__list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-                    <li class="dignity__list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-                    <li class="dignity__list-item">Delectus dolorem vero quae beatae quasi dolor deserunt iste amet atque, impedit iure placeat, ullam. Reprehenderit aliquam, nemo cum velit ratione perferendis quas, maxime, quaerat porro totam, dolore minus inventore.</li>
-                </ul>
-            </section>
-            <section class="page__section screenshots">
-                <h2 class="page__section-title page__section-title-wide">Screenshots</h2>
-                <figure class="screenshots__figure">
-                    <img src="#" alt="Screenshot" height="150" width="200" class="screenshots__figure-image">
-                    <figcaption class="screenshots__figure-caption">
-                        <h3 class="screenshots__figure-title">The description for the image</h3>
-                        <p class="screenshots__figure-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
-                    </figcaption>
-                </figure>
-                <figure class="screenshots__figure">
-                    <img src="#" alt="Screenshot" height="150" width="200" class="screenshots__figure-image">
-                    <figcaption class="screenshots__figure-caption">
-                        <h3 class="screenshots__figure-title">The description for the image</h3>
-                        <p class="screenshots__figure-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-                    </figcaption>
-                </figure>
-                <figure class="screenshots__figure">
-                    <img src="#" alt="Screenshot" height="150" width="200" class="screenshots__figure-image">
-                    <figcaption class="screenshots__figure-caption">
-                        <h3 class="screenshots__figure-title">The description for the image</h3>
-                        <p class="screenshots__figure-text">Pariatur iure ab sunt nesciunt, quibusdam odio iste cumque itaque, ipsa vel exercitationem ullam quos aut nostrum cupiditate fuga quaerat quam animi dolores. Sequi itaque, unde perferendis nemo debitis dolor.</p>
-                    </figcaption>
-                </figure>
-                <figure class="screenshots__figure">
-                    <img src="#" alt="Screenshot" height="150" width="200" class="screenshots__figure-image">
-                    <figcaption class="screenshots__figure-caption">
-                        <h3 class="screenshots__figure-title">The description for the image</h3>
-                        <p class="screenshots__figure-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis fuga, illo at. Natus eos, eligendi illum rerum omnis porro ex, magni, explicabo veniam incidunt in quam sapiente ut ipsum.</p>
-                    </figcaption>
-                </figure>
-            </section>
-            <section class="page__section reviews">
-                <h2 class="page__section-title page__section-title-wide">Reviews</h2>
-                <div class="reviews__review">
-                    <img src="#" alt="Photo" width="75" class="reviews__review-photo">
-                    <p class="reviews__review-text">
-                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                        <span class="reviews__review-subtext">Lourens S.</span>
-                    </p>
-                </div>
-                <div class="reviews__review">
-                    <img src="#" alt="Photo" width="75" class="reviews__review-photo">
-                    <p class="reviews__review-text">
-                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                        <span class="reviews__review-subtext">Lourens S.</span>
-                    </p>
-                </div>
-                <div class="reviews__review">
-                    <img src="#" alt="Photo" width="75" class="reviews__review-photo">
-                    <p class="reviews__review-text">
-                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                        <span class="reviews__review-subtext">Lourens S.</span>
-                    </p>
-                </div>
-                <div class="reviews__review">
-                    <img src="#" alt="Photo" width="75" class="reviews__review-photo">
-                    <p class="reviews__review-text">
-                        Porro officia cumque sint deleniti nemo facere rem vitae odit inventore cum odio, iste quia doloribus autem aperiam nulla ea neque reprehenderit. Libero doloribus, possimus officiis sapiente necessitatibus commodi consectetur?
-                        <span class="reviews__review-subtext">Lourens S.</span>
-                    </p>
-                </div>
-            </section>
-            <section class="page__section buy-it">
-                <h2 class="page__section-title page__section-title-wide">Buy it now</h2>
-                <div class="buy-it__offer">
-                    <h3 class="buy-it__offer-title">Standart</h3>
-                    <span class="buy-it__offer-price">$100</span>
-                    <ol class="buy-it__offer-list">
-                        <li>Porro officia cumque sint deleniti;</li>
-                        <li>Тemo facere rem vitae odit;</li>
-                        <li>Cum odio, iste quia doloribus autem;</li>
-                        <li>Aperiam nulla ea neque.</li>
-                    </ol>
-                    <a href="#" class="buy-it__offer-button">Buy</a>
-                </div>
-                <div class="buy-it__offer">
-                    <h3 class="buy-it__offer-title">Premium</h3>
-                    <span class="buy-it__offer-price">$150</span>
-                    <ol class="buy-it__offer-list">
-                        <li>Porro officia cumque sint deleniti;</li>
-                        <li>Тemo facere rem vitae odit;</li>
-                        <li>Cum odio, iste quia doloribus autem;</li>
-                        <li>Aperiam nulla ea neque;</li>
-                        <li>Porro officia cumque sint deleniti;</li>
-                        <li>Тemo facere rem vitae odit;</li>
-                        <li>Cum odio, iste quia doloribus autem;</li>
-                        <li>Aperiam nulla ea neque.</li>
-                    </ol>
-                    <a href="#" class="buy-it__offer-button">Buy</a>
-                </div>
-                <div class="buy-it__offer">
-                    <h3 class="buy-it__offer-title">Lux</h3>
-                    <span class="buy-it__offer-price">$200</span>
-                    <ol class="buy-it__offer-list">
-                        <li>Porro officia cumque sint deleniti;</li>
-                        <li>Тemo facere rem vitae odit;</li>
-                        <li>Cum odio, iste quia doloribus autem;</li>
-                        <li>Aperiam nulla ea neque;</li>
-                        <li>Porro officia cumque sint deleniti;</li>
-                        <li>Тemo facere rem vitae odit;</li>
-                        <li>Cum odio, iste quia doloribus autem;</li>
-                        <li>Aperiam nulla ea neque;</li>
-                        <li>Porro officia cumque sint deleniti;</li>
-                        <li>Тemo facere rem vitae odit;</li>
-                        <li>Cum odio, iste quia doloribus autem;</li>
-                        <li>Aperiam nulla ea neque.</li>
-                    </ol>
-                    <a href="#" class="buy-it__offer-button">Buy</a>
-                </div>
-            </section>
-        </main>
-        <footer class="page-footer">
-            <h2 class="page-footer__header">Contacts</h2>
-            <form action="#" class="page-footer__form">
-                <input type="text" class="form__input" id="form__name" placeholder="Your name" required>
-                <input type="email" class="form__input" id="form__mail" placeholder="Your email" required pattern="\S+@\S+\.\S+">
-                <textarea class="form__input" id="form__message" cols="30" rows="10" placeholder="Your message" required></textarea>
-                <input class="form__input" type="submit" value="Send" id="form__send">
-            </form>
-            <div class="page-footer__contacts">
-                <ul class="page-footer__contacts-list">
-                    <li class="page-footer__contacts-list-item"><i class="fab fa-skype"></i> here_your_login_skype</li>
-                    <li class="page-footer__contacts-list-item">279679659</li>
-                    <li class="page-footer__contacts-list-item"><i class="fas fa-at"></i> psdhtmlcss@mail.ru</li>
-                    <li class="page-footer__contacts-list-item"><i class="fas fa-phone"></i> 80 00 4568 55 55</li>
-                </ul>
-                <div class="page-footer__social-media">
-                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-google-plus-g"></i></a>
-                    <a href="#" class="page-footer__social-media-link"><i class="fab fa-youtube"></i></a>
-                </div>
-            </div>
-        </footer>
-        <p class="attribution">Copyright © 2014 Product name · PSD HTML CSS</p>
+        <main class="page"></main>
+        <footer class="page-footer"></footer>
     </div>
 </body>
 </html>
